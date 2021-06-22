@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Compras</title>
+</head>
+<body>
+    <h1 align="center">COMPRAS</h1>
+    <a href="Pag-principal.html">Página principal</a>
+    <h3 align="left"> <font color="#5858FA">COMPUTADORAS </font></h3>
+    <table cellspacing="10" cellpadding="5" border="1" bgcolor="#CEF6F5" bordercolor="#5858FA" align="down"  width="200" >
+        <tr>
+            <td bgcolor="#5858FA">
+                TIPO
+            </td>
+            <td bgcolor="#5858FA">
+                PRECIO
+            </td>
+        </tr>
+        <tr>
+            <td>
+               Intel
+            </td>
+            <td>
+                $8,990
+            </td>
+            <tr>
+                <td>
+                    Dell
+                </td>
+                <td>
+                    $3,499
+                </td>
+                <tr>
+                    <td>
+                        HP
+                    </td>
+                    <td>
+                        $6,500
+                    </td>
+                    <tr>
+                        <td>
+                            Lenovo
+                        </td>
+                        <td>
+                            $10,799
+                        </td>
+                        <tr>
+                            <td>
+                                Huawei
+                            </td>
+                            <td>
+                                $16,499
+                            </td>
+                        </tr>
+                    </tr>
+                </tr>
+            </tr>
+        </tr>
+    </table>
+    <h3 align="left"><font color="#F781F3">PORTÁTILES</font></h3>
+    <table cellspacing="10" cellpadding="5" border="1" bgcolor="#F8E0EC" bordercolor="#F781F3" align="down"  width="200">
+        <tr>
+            <td bgcolor="#F781F3">
+                TIPO
+            </td>
+            <td bgcolor="#F781F3">
+                PRECIO
+            </td>
+        </tr>
+        <tr>
+            <td>
+               HP
+            </td>
+            <td>
+                $5,999
+            </td>
+            <tr>
+                <td>
+                    Acer
+                </td>
+                <td>
+                    $7,499
+                </td>
+                <tr>
+                    <td>
+                        Intel
+                    </td>
+                    <td>
+                        $16,999
+                    </td>
+                    <tr>
+                        <td>
+                            Asus
+                        </td>
+                        <td>
+                            $17,399
+                        </td>
+                        </tr>
+                    </tr>
+                </tr>
+            </tr>
+        </tr>
+    </table>
+    <h3 align="left"><font color="#2EFE64">ACCESORIOS</font></h3>
+    <table cellspacing="10" cellpadding="5" border="1" bgcolor="#A9F5BC" bordercolor="#2EFE64" align="down"  width="200">
+        <tr>
+            <td bgcolor="#2EFE64">
+                TIPO
+            </td>
+            <td bgcolor="#2EFE64">
+                PRECIO
+            </td>
+        </tr>
+        <tr>
+            <td>
+               Cargadores
+            </td>
+            <td>
+                $250-$400
+            </td>
+            <tr>
+                <td>
+                    Teclados
+                </td>
+                <td>
+                    $600-$1,500
+                </td>
+                <tr>
+                    <td>
+                        Audifonos
+                    </td>
+                    <td>
+                        $600-$1,000
+                    </td>
+                    <tr>
+                        <td>
+                            Mouses
+                        </td>
+                        <td>
+                            $150-$1,000
+                            <tr>
+                                <td>
+                                    Bocinas
+                                </td>
+                                <td>
+                                    $200-$500
+                                </td>
+                            </tr>
+                        </td>
+                        </tr>
+                    </tr>
+                </tr>
+            </tr>
+        </tr>
+    </table>
+    <h6>Cada accesorio es de la marca correspondiente a la computadora o portátil.</h6>
+    <h3 align="left"><font color="#F63446">DATOS PARA LA COMPRA</font></h3>
+    <form method="POST" action="mailto:bairesdev.oficial@hotmail.com">
+
+        <br><label for="name">Nombre:</label>
+           <textarea type="text" id="name" name="user_name"></textarea></br>
+           
+           <br><label for="mail">Correo electrónico:</label>
+           <textarea type="email" id="mail" name="user_mail"></textarea></br>
+
+           <br>Computadoras:
+           <br>
+           <input type="checkbox" name="Computadora" value="Intel">Intel
+           <input type="checkbox"name="Computadora" value="HP">Hp
+           <input type="checkbox"name="Computadora" value="Dell">Dell
+           <input type="checkbox"name="Computadora" value="Lenovo">Lenovo
+           <input type="checkbox"name="Computadora" value="Huawei">Huawei
+         
+           <br>Portátiles:
+           <br>
+           <input type="checkbox"name="Portatil" value="HP">Hp
+           <input type="checkbox"name="Portatil" value="Acer">Acer
+           <input type="checkbox"name="Portatil" value="Intel">Intel
+           <input type="checkbox"name="Portatil" value="Asus">Asus
+         
+           <br>Accesorios:
+           <br>
+           <input type="checkbox"name="Accesorio" value="Cargador">Cargador
+           <input type="checkbox"name="Accesorio" value="Teclado">Teclado
+           <input type="checkbox"name="Accesorio" value="Audifonos">Audifonos
+           <input type="checkbox"name="Accesorio" value="Mouse">Mouse
+           <input type="checkbox"name="Accesorio" value="Bocinas">Bocinas</br>
+           
+           <br><label for="detalles">Detalles de la compra:</label>
+            <textarea type="mensaje" id="mensaje" name="productos"></textarea></br>
+        <br>
+        Tarjeta de pago:<select name="tarjeta">
+                <option value="BBVA">BBVA</option>
+                <option value="MasterCat">Master Cat</option>
+                <option value="VISA">VISA</option>
+            </select>
+        </br>
+        <label class="button"></label>
+           <button type="submit">Envíe su mensaje</button><br></br>
+           <button type="reset">Borrar</button><br></br>
+<label>
+
+</label>
+        <style>
+            form {
+  margin-top: 2%;
+  width: 300px;
+  padding: 1em;
+  border: 2px solid rgb(156, 134, 255);
+}
+option{
+    color: blueviolet;
+    border:1px solid rgb(141, 99, 255);
+    box-sizing:border-box
+
+}
+label {
+  display: inline-block;
+  width: 90px;
+  text-align: left;
+}
+input,
+textarea {
+  width: 200px;
+  box-sizing: border-box;
+  border: 1px solid rgb(141, 99, 255);
+}
+textarea {
+  vertical-align: top;
+  height: 3em;
+  color: blueviolet;
+}
+.button {
+  padding-left: 100px;
+  padding-block-start: 5%; 
+}
+input[type=checkbox]
+{
+  width: 15px;
+  height: 15px;
+  margin: 5px 65px;
+  position: relative;
+  border-radius: 10px;
+}
+        </style>
+       </form>
+</body>
+<body alink="#DF01A5" link="#FF0080"></body>
+</html>
